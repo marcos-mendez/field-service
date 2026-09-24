@@ -1,0 +1,193 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* fieldservice_equipment_preventive_checklist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-21 22:54+0000\n"
+"PO-Revision-Date: 2026-09-21 22:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "AP"
+msgstr "AP"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_activity__answer_type
+msgid "Answer Type"
+msgstr "Tipo de resposta"
+
+#. module: fieldservice_equipment_preventive_checklist
+#. odoo-python
+#: code:addons/fieldservice_equipment_preventive_checklist/models/fsm_order_equipment_line.py:0
+msgid ""
+"Answer every activity of the sheet of %(equipment)s before validating it: "
+"%(activities)s"
+msgstr "Responda todos os itens da ficha de %(equipment)s antes de validar: %(activities)s"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__result__pass
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_order_equipment_line__conclusion__pass
+msgid "Approved"
+msgstr "Aprovado"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__answer_type__check
+msgid "Check"
+msgstr "Verificação"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_order_equipment_line__checklist_activity_ids
+msgid "Checklist"
+msgstr "Lista de conferência"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_order_equipment_line__conclusion
+msgid "Conclusion"
+msgstr "Conclusão"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_order_equipment_line__corrective_order_id
+msgid "Corrective Order"
+msgstr "Ordem corretiva"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_preventive_type__corrective_order_type_id
+msgid "Corrective Order Type"
+msgstr "Tipo da ordem corretiva"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_preventive_type__corrective_on_fail
+msgid "Corrective Order When Reproved"
+msgstr "Abrir corretiva quando reprovado"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_preventive_type__corrective_user_id
+msgid "Corrective Responsible"
+msgstr "Responsável pela corretiva"
+
+#. module: fieldservice_equipment_preventive_checklist
+#. odoo-python
+#: code:addons/fieldservice_equipment_preventive_checklist/models/fsm_order_equipment_line.py:0
+msgid "Corrective order from a reproved preventive visit"
+msgstr "Ordem corretiva de visita preventiva reprovada"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_activity__equipment_line_id
+msgid "Equipment Line"
+msgstr "Linha de equipamento"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "Equipment Sheet"
+msgstr "Ficha do equipamento"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model,name:fieldservice_equipment_preventive_checklist.model_fsm_activity
+msgid "Field Service Activity"
+msgstr "Atividade de serviço de campo"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model,name:fieldservice_equipment_preventive_checklist.model_fsm_order_equipment_line
+msgid "Field Service Order Equipment Line"
+msgstr "Linha de equipamento da ordem de serviço"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model,name:fieldservice_equipment_preventive_checklist.model_fsm_preventive_type
+msgid "Field Service Preventive Visit Type"
+msgstr "Tipo de visita preventiva"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,help:fieldservice_equipment_preventive_checklist.field_fsm_preventive_type__corrective_user_id
+msgid "Gets an activity on each corrective order opened."
+msgstr "Recebe uma atividade em cada ordem corretiva aberta."
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "NA"
+msgstr "NA"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__result__no
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "No"
+msgstr "Não"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__result__na
+msgid "Not Applicable"
+msgstr "Não aplicável"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "Not Found"
+msgstr "Não localizado"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_form
+msgid "Open Sheet"
+msgstr "Abrir ficha"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,help:fieldservice_equipment_preventive_checklist.field_fsm_preventive_type__corrective_on_fail
+msgid "Open a corrective order for the equipment whose sheet is reproved."
+msgstr "Abre uma ordem corretiva para o equipamento cuja ficha foi reprovada."
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "RP"
+msgstr "RP"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__result__fail
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_order_equipment_line__conclusion__fail
+msgid "Reproved"
+msgstr "Reprovado"
+
+#. module: fieldservice_equipment_preventive_checklist
+#. odoo-python
+#: code:addons/fieldservice_equipment_preventive_checklist/models/fsm_order_equipment_line.py:0
+msgid ""
+"Reproved on %(order)s (%(type)s):\n"
+"%(activities)s"
+msgstr "Reprovado na %(order)s (%(type)s):\n%(activities)s"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_activity__result
+msgid "Result"
+msgstr "Resultado"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_order_equipment_line__signature
+msgid "Signature"
+msgstr "Assinatura"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "Validate"
+msgstr "Validar"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields,field_description:fieldservice_equipment_preventive_checklist.field_fsm_order_equipment_line__validated_by_id
+msgid "Validated By"
+msgstr "Validado por"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__result__yes
+#: model_terms:ir.ui.view,arch_db:fieldservice_equipment_preventive_checklist.fsm_order_equipment_line_form_view
+msgid "Yes"
+msgstr "Sim"
+
+#. module: fieldservice_equipment_preventive_checklist
+#: model:ir.model.fields.selection,name:fieldservice_equipment_preventive_checklist.selection__fsm_activity__answer_type__question
+msgid "Yes/No Question"
+msgstr "Pergunta sim/não"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="fsm_preventive_type_list_view" model="ir.ui.view">
+        <field name="name">fsm.preventive.type.list.checklist</field>
+        <field name="model">fsm.preventive.type</field>
+        <field
+            name="inherit_id"
+            ref="fieldservice_equipment_preventive.fsm_preventive_type_list_view"
+        />
+        <field name="arch" type="xml">
+            <field name="order_type_id" position="after">
+                <field name="corrective_on_fail" />
+                <field
+                    name="corrective_order_type_id"
+                    invisible="not corrective_on_fail"
+                />
+                <field name="corrective_user_id" invisible="not corrective_on_fail" />
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="fsm_order_equipment_line_form_view" model="ir.ui.view">
+        <field name="name">fsm.order.equipment.line.form.checklist</field>
+        <field name="model">fsm.order.equipment.line</field>
+        <field name="arch" type="xml">
+            <form string="Equipment Sheet">
+                <header>
+                    <button
+                        name="action_done"
+                        type="object"
+                        string="Validate"
+                        class="oe_highlight"
+                        invisible="state == 'done'"
+                    />
+                    <button
+                        name="action_not_found"
+                        type="object"
+                        string="Not Found"
+                        invisible="state != 'pending'"
+                    />
+                    <field name="state" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="order_id" readonly="1" />
+                            <field name="equipment_id" readonly="1" />
+                            <field name="current_location_id" />
+                            <field name="preventive_type_id" />
+                        </group>
+                        <group>
+                            <field name="template_id" readonly="state == 'done'" />
+                            <field name="conclusion" widget="badge" />
+                            <field name="validated_by_id" />
+                            <field name="date_done" />
+                            <field name="corrective_order_id" />
+                        </group>
+                    </group>
+                    <field name="checklist_activity_ids" readonly="state == 'done'">
+                        <list create="0" delete="0" editable="bottom">
+                            <field name="sequence" column_invisible="1" />
+                            <field name="answer_type" column_invisible="1" />
+                            <field name="name" />
+                            <field name="result" widget="badge" />
+                            <button
+                                name="action_result_pass"
+                                type="object"
+                                string="AP"
+                                invisible="answer_type != 'check'"
+                            />
+                            <button
+                                name="action_result_fail"
+                                type="object"
+                                string="RP"
+                                invisible="answer_type != 'check'"
+                            />
+                            <button
+                                name="action_result_na"
+                                type="object"
+                                string="NA"
+                                invisible="answer_type != 'check'"
+                            />
+                            <button
+                                name="action_result_yes"
+                                type="object"
+                                string="Yes"
+                                invisible="answer_type != 'question'"
+                            />
+                            <button
+                                name="action_result_no"
+                                type="object"
+                                string="No"
+                                invisible="answer_type != 'question'"
+                            />
+                        </list>
+                    </field>
+                    <group>
+                        <field name="note" readonly="state == 'done'" />
+                        <field
+                            name="signature"
+                            widget="signature"
+                            readonly="state == 'done'"
+                        />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="fsm_order_form" model="ir.ui.view">
+        <field name="name">fsm.order.form.checklist</field>
+        <field name="model">fsm.order</field>
+        <field
+            name="inherit_id"
+            ref="fieldservice_order_equipment_line.fsm_order_form"
+        />
+        <field name="arch" type="xml">
+            <xpath
+                expr="//field[@name='equipment_line_ids']/list/field[@name='state']"
+                position="before"
+            >
+                <field name="conclusion" widget="badge" optional="show" />
+                <button
+                    name="action_open_checklist"
+                    type="object"
+                    icon="fa-list-ul"
+                    title="Open Sheet"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
